@@ -16,7 +16,7 @@ brandtopyear
 # Create bar plot
 ggplot(data = brandtopyear, aes(x = reorder(brands, avg_sale_price), y = avg_sale_price)) +
   geom_bar(stat = 'identity', fill = 'red') +
-  labs(x = 'Thương hiệu', y = 'Tổng doanh thu', title = 'Tổng doanh thu bán giày theo từng thương hiệu năm 2023') +
+  labs(x = 'Thương hiệu', y = 'Tổng doanh thu (USD)', title = 'Tổng doanh thu bán giày theo từng thương hiệu năm 2023') +
   theme_minimal() +
   coord_flip() +
   scale_y_continuous(labels = scales::comma)

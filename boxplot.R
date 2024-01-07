@@ -24,7 +24,7 @@ upper_bound <- Q3 + 1.5 * IQR
 sosanh_no_outliers <- sosanh %>%
   filter(
     `Chỉ năm 2023` >= lower_bound[1] & `Chỉ năm 2023` <= upper_bound[1] &
-      `Toàn thời gian` >= lower_bound[2] & `Toàn thời gian` <= upper_bound[2]
+      `Toàn thời gian` >= lower_bound[2] & `Giá cao nhất trước 2023` <= upper_bound[2]
   ) %>%
   drop_na()
 
